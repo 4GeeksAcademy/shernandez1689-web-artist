@@ -3,54 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de [Tu Nombre]</title>
+    <title>Portafolio de Ingeniería Mecánica - Conducción Autónoma</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Portafolio de [Tu Nombre]</h1>
-        <nav>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+    <header role="banner">
+        <h1>Sergio Hernández</h1>
+        <h2>Ingeniero Mecánico</h2>
+        <p class="subtitle">Diseño y validación de sistemas de conducción autónoma</p>
+        <nav aria-label="Navegación principal">
             <a href="#intro">Inicio</a>
             <a href="#projects">Proyectos</a>
             <a href="#contact">Contacto</a>
         </nav>
     </header>
 
-    <section id="intro" class="intro">
-        <h2>Bienvenido a mi Portafolio</h2>
-        <p>Soy [Tu Nombre], un [tu profesión, ej. desarrollador web]. Aquí encontrarás algunos de mis proyectos y cómo contactarme.</p>
-    </section>
+    <main id="main" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="Sergio Hernández">
+        <meta itemprop="jobTitle" content="Ingeniero mecánico especializado en conducción autónoma">
+        <meta itemprop="url" content="https://tusitio.example.com">
+        <meta itemprop="sameAs" content="https://www.linkedin.com/in/tu-linkedin">
 
-    <section id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto 1.</p>
-                <a href="#">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
-                <a href="#">Ver más</a>
-            </div>
-            <div class="project">
-                <h3>Proyecto 3</h3>
-                <p>Descripción breve del proyecto 3.</p>
-                <a href="#">Ver más</a>
-            </div>
-        </div>
-    </section>
+        <section id="intro" class="intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Bienvenido a mi portafolio</h2>
+            <p itemprop="description">Soy <strong itemprop="name">Sergio Hernández</strong>, ingeniero mecánico especializado en sistemas de conducción autónoma. Mi trabajo se enfoca en el diseño mecánico, la simulación y la validación de vehículos autónomos seguros y eficientes.</p>
+            <p>Mi experiencia incluye pruebas en pista, integración de sensores, análisis de fiabilidad y colaboración con equipos multidisciplinares.</p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80" alt="Vehículo de prueba autónomo en carretera" />
+                <figcaption>Vehículo de prueba autónomo equipado con sensores de conducción asistida.</figcaption>
+            </figure>
+        </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: tuemail@example.com</p>
-        <p>Teléfono: +123 456 7890</p>
-        <p>LinkedIn: <a href="#">Tu LinkedIn</a></p>
-    </section>
+        <section id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Proyectos destacados</h2>
+            <div class="projects" role="list">
+                <article class="project" role="listitem" aria-labelledby="project1-title" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                    <h3 id="project1-title" itemprop="name">Validación de piloto automático</h3>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Coche moderno utilizado en pruebas de piloto automático" />
+                        <figcaption>Coche de pruebas empleado para validar funciones de piloto automático.</figcaption>
+                    </figure>
+                    <p itemprop="description">Desarrollé el protocolo de pruebas para validar un sistema de piloto automático en escenarios urbanos y de alta velocidad.</p>
+                    <a href="#" aria-label="Ver más sobre validación de piloto automático">Ver más</a>
+                </article>
+                <article class="project" role="listitem" aria-labelledby="project2-title" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                    <h3 id="project2-title" itemprop="name">Diseño de actuadores de dirección</h3>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="Detalle mecánico de la dirección de un vehículo autónomo" />
+                        <figcaption>Diseño de actuadores de dirección con redundancia para conducción autónoma.</figcaption>
+                    </figure>
+                    <p itemprop="description">Diseñé y analicé actuadores mecánicos para la dirección de un vehículo autónomo con énfasis en seguridad y redundancia.</p>
+                    <a href="#" aria-label="Ver más sobre diseño de actuadores de dirección">Ver más</a>
+                </article>
+                <article class="project" role="listitem" aria-labelledby="project3-title" itemprop="hasPart" itemscope itemtype="https://schema.org/CreativeWork">
+                    <h3 id="project3-title" itemprop="name">Simulación de dinámica vehicular</h3>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Pantalla de simulación mostrando dinámica vehicular" />
+                        <figcaption>Simulación digital de dinámica vehicular para conducción autónoma.</figcaption>
+                    </figure>
+                    <p itemprop="description">Implementé modelos de simulación de dinámica vehicular para evaluar el comportamiento del sistema de conducción en condiciones límite.</p>
+                    <a href="#" aria-label="Ver más sobre simulación de dinámica vehicular">Ver más</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contacto</h2>
+            <p>Estoy disponible para proyectos de diseño mecánico, validación de sistemas autónomos y consultoría técnica.</p>
+            <div itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                <meta itemprop="contactType" content="Consultoría técnica">
+                <ul>
+                    <li>Email: <a href="mailto:tuemail@example.com" itemprop="email">tuemail@example.com</a></li>
+                    <li>Teléfono: <a href="tel:+1234567890" itemprop="telephone">+123 456 7890</a></li>
+                    <li>LinkedIn: <a href="#" itemprop="sameAs" aria-label="Abrir perfil de LinkedIn">Tu LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Sergio Hernández. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
